@@ -60,6 +60,23 @@ console.log(date);
 
 
 //5.顶层对象
+//顶层对象：浏览器环境指window对象。在Node指global对象
+
+//ES5中，顶层对象的属性和全局变量是等价的。
+
+window.a = 1;
+a // 1
+
+a = 2;
+window.a //2
+
+//ES6中，var和function声明的全局变量，仍是顶层对象的属性。let const class声明的全局变量不属于顶层对象的属性
+let b = 1;
+
+window.b // undefined
 
 
+//globalThis
 
+//浏览器中顶层对象是window，self指向顶层对象。
+//Node 没有window和self，对应的是global和this
