@@ -41,5 +41,18 @@ codePointAt(3)//a index不是2.
 
 'Go'.repeat(3) //GoGoGo
 
+7.padStart() padEnd()
 
+'x'.padStart(10, 'La') LALALALALx 头部补齐
+'x'.padEnd(10, 'La') xLALALALAL 尾部补齐
+
+8.trimStart() trimEnd()
+略
+
+9.matchAll()
 */
+
+{
+    let a = 'Go'.repeat(3); //GoGoGo
+    console.log(a);
+}
